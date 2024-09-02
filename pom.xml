@@ -117,6 +117,76 @@
             <dependencies>
                 <dependency>
                     <groupId>org.apereo.cas</groupId>
+                    <artifactId>cas-server-support-jdbc</artifactId>
+                    <version>${cas.version}</version>
+                    <scope>runtime</scope>
+                    <exclusions>
+                        <exclusion>
+                            <groupId>com.fasterxml.jackson.core</groupId>
+                            <artifactId>jackson-core</artifactId>
+                        </exclusion>
+                        <exclusion>
+                            <groupId>org.apache.shiro</groupId>
+                            <artifactId>shiro-core</artifactId>
+                        </exclusion>
+                        <exclusion>
+                            <groupId>org.apereo.cas</groupId>
+                            <artifactId>cas-server-core-util-api</artifactId>
+                        </exclusion>
+                        <exclusion>
+                            <groupId>org.springframework.boot</groupId>
+                            <artifactId>spring-boot-starter-websocket</artifactId>
+                        </exclusion>
+                        <exclusion>
+                            <groupId>org.springframework.security</groupId>
+                            <artifactId>spring-security-core</artifactId>
+                        </exclusion>
+                        <exclusion>
+                            <groupId>org.springframework.security</groupId>
+                            <artifactId>spring-security-crypto</artifactId>
+                        </exclusion>
+                    </exclusions>
+                </dependency>
+                <dependency>
+                    <groupId>org.apereo.cas</groupId>
+                    <artifactId>cas-server-support-jdbc-authentication</artifactId>
+                    <version>${cas.version}</version>
+                    <scope>runtime</scope>
+                    <exclusions>
+                        <exclusion>
+                            <groupId>com.fasterxml.jackson.core</groupId>
+                            <artifactId>jackson-core</artifactId>
+                        </exclusion>
+                        <exclusion>
+                            <groupId>org.apache.shiro</groupId>
+                            <artifactId>shiro-core</artifactId>
+                        </exclusion>
+                        <exclusion>
+                            <groupId>org.apereo.cas</groupId>
+                            <artifactId>cas-server-core-util-api</artifactId>
+                        </exclusion>
+                        <exclusion>
+                            <groupId>org.springframework.boot</groupId>
+                            <artifactId>spring-boot-starter-websocket</artifactId>
+                        </exclusion>
+                        <exclusion>
+                            <groupId>org.springframework.security</groupId>
+                            <artifactId>spring-security-core</artifactId>
+                        </exclusion>
+                        <exclusion>
+                            <groupId>org.springframework.security</groupId>
+                            <artifactId>spring-security-crypto</artifactId>
+                        </exclusion>
+                    </exclusions>
+                </dependency>
+                <dependency>
+                    <groupId>org.postgresql</groupId>
+                    <artifactId>postgresql</artifactId>
+                    <version>42.3.5</version>
+                    <scope>runtime</scope>
+                </dependency>
+                <dependency>
+                    <groupId>org.apereo.cas</groupId>
                     <artifactId>cas-server-webapp${app.server}</artifactId>
                     <version>${cas.version}</version>
                     <type>war</type>
